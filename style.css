@@ -1,0 +1,277 @@
+
+/* VARIABLES */
+
+
+/* /VARIABLES */
+
+
+/* GLOBAL CLASSES */
+.fraunces{
+    font-family: 'Fraunces', serif;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.white{
+    color: white;
+}
+
+.gray{
+    color: hsl(210, 4%, 67%);
+}
+
+.darkgray{
+    color:hsl(232, 10%, 55%);
+}
+
+.green{
+    color: hsl(167, 40%, 24%);
+}
+
+.blue{
+    color:hsl(198, 62%, 26%);
+}
+.thin{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+
+/* /GLOBAL CLASSES */
+
+*{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* HEADER */
+header {
+    background-image: url(./images/desktop/image-header.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+#toggler {
+    color: white;
+    border: none;
+}
+
+#navLinks a {
+    color: white;
+    font-weight: lighter;
+}
+
+#contact {
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'Fraunces', serif;
+    font-size: .8rem;
+}
+
+#contact:hover{
+    background-color: hsl(0, 0%, 100%, 50%);
+    color:white;
+}
+
+#heading {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+/* /HEADER */
+
+/* MAIN */
+
+#learnYellow{
+    text-decoration: underline;
+    text-decoration-color: hsl(51, 100%, 49%, 60%);
+    text-decoration-thickness: 6px;
+    color: black; 
+}
+#learnPink{
+    text-decoration: underline;
+    text-decoration-color: hsl(7, 99%, 70%, 60%);
+    text-decoration-thickness: 6px;
+    color: black; 
+}
+
+
+#egg{
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 50%;
+}
+
+#cup{
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 50%;
+}
+#cherry{
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 50%;
+}
+
+#imageText{
+    position:relative;    
+    top: 60%;
+}
+
+#orange{
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 50%;
+}
+
+/* CLIENT TESTIMONIALS */
+#client img {
+    border-radius: 50%;
+    height:20%;
+}
+
+footer {
+    background-color: hsl(168, 34%, 41%);
+}
+
+#logo {
+    width: 15%;
+    filter:invert(1) opacity(40%);
+}
+
+#footerLinks a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    font-size: .8rem;
+}
+
+#footerLinks a:hover, #attribution a:hover{
+    color: white;
+}
+
+#white:hover{
+    filter:  brightness(0) invert(1);
+}
+
+#attribution p, #attribution a{
+    font-size: .8rem;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 400px) {
+    /* HEADING */
+    header{
+        background-image: url(./images/mobile/image-header.jpg);
+        background-repeat: no-repeat;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    nav{
+        margin-top: 1rem;
+    }
+    #collapsibleNavId{
+        background-color: white;
+        margin-top: 45px;
+        padding: 15px 0px;
+    }
+
+    #navLinks a{
+        font-size: 25px;
+        padding: 15px;
+        color: hsl(210, 4%, 67%) !important;
+    }
+
+    #contact {
+        border-radius: 25px;
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: hsl(51, 100%, 49%);
+        color: black;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #heading{
+        margin-top: 5rem;
+        letter-spacing: 8px;
+    }
+
+    /* MAIN */
+    #transform,
+    #egg,
+    #cup,
+    #standout,
+    #cherry,
+    #orange{
+        width: 100%;
+    }
+    #transform,
+    #standout{
+        text-align: center;
+        padding: none !important;
+    }
+    #egg{
+        background-image: url(./images/mobile/image-transform.jpg);
+        background-size: contain;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+
+    #cup{
+        background-image: url(./images/mobile/image-stand-out.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+
+    #cherry{
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+    }
+    #orange{
+        background-image: url(./images/mobile/image-photography.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+    }
+
+    #transform,
+    #standout{
+        height: 400px;
+    }
+    /* FOOTER */
+
+    footer{
+        height: 300px;
+    }
+    #logo {
+        width: 55%;
+    }
+    
+    #footerLinks a{
+        text-decoration: none;
+        color: hsl(167, 40%, 24%);
+        font-size: 1rem;
+    }
+    
+}
